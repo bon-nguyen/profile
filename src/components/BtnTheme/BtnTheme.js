@@ -12,6 +12,7 @@ export const BtnThemeContainer = styled.button`
   border-radius: 10px;
   color: var(--txt-primary);
   margin-left: auto;
+  cursor: pointer;
 
   @media ${device.laptop}{
     margin-left: 0.5em;

@@ -4,45 +4,54 @@ import { modernNormalize } from "styled-modern-normalize";
 
 export const GlobalStyle = createGlobalStyle`
     ${modernNormalize}
-
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
     .light {
-        --txt: rgba(198,201,216,.75);
-        --txt-title: #fff;
+        --txt: #717173;
+        --txt-title: #1f1f25;
         --txt-primary: #f9004d;
-        --bg: #101010;
+        --txt-primary-active: #fff;
+        --bg: #fff;
         --bg-primary: #fafafa;
-        --bg-secondary: #191919;
-        --bg-modal: #fafafa;
+        --bg-secondary: #f8f9fc;
+        --bg-modal: #100d19;
         --bg-border: #f61b10; 
-        --bg-shadow: #a10b46bd;
-        --social-icon: #c5c8d8;
+        --bg-shadow: #f61b10;
+        --backdrop: rgba(0, 0, 0, 0.75);
+        --social-icon: #1f1f25;
         --modal-border: none;
         --preloader: #fafafa;
-        --logo-primary: #39b175;
+        --logo-primary: #f9004d;
         --border-bottom: #333;
         --btn-primary: #f9004d;
-        --btn-border: hsla(0,0%,100%,.3);
+        --btn-border: #1f1f25;
+        --btn-icon: #1f1f25;
+        --tags-txt: #fff;
+        --tags-bg: #f9004d;
     }
       
     .dark {
         --txt: rgba(198,201,216,.75);
         --txt-title: #fff;
         --txt-primary: #f9004d;
+        --txt-primary-active: #fff;
         --bg: #101010;
         --bg-primary: #181a27;
         --bg-secondary: #191919;
-        --bg-modal: #100D19;
+        --bg-modal: #100d19;
         --bg-border: #f61b10;
-        --bg-shadow: #a10b46bd;
+        --bg-shadow: #f61b10;
+        --backdrop: rgba(0, 0, 0, 0.75);
         --social-icon: #c5c8d8;
         --modal-border: #100D19;
         --preloader: #0c0513;
         --logo-primary: #f9004d;
         --border-bottom: #333;
         --btn-primary: #f9004d;
-        --btn-border: hsla(0,0%,100%,.3);
+        --btn-border: #f9004d;
+        --btn-icon: rgba(198,201,216,.75);
+        --tags-txt: #fff;
+        --tags-bg: #f9004d;
     }
 
     *,
@@ -72,8 +81,60 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Montserrat', sans-serif; 
         font-size: 14px;
         line-height: 1.7;
-        font-weight: 400;
+        font-weight: 500;
     }
 
+    .overflow-hidden {
+        overflow: hidden;
+    }
 
+    .slider-in__right{
+
+        &-enter{
+            transform: translateX(100%);
+            opacity: 0;
+
+            &-active{
+                transform: translateX(0%);
+                opacity: 1;
+                transition: all 300ms;
+            }
+        }
+
+        &-exit{
+            transform: translateX(0%);
+            opacity: 1;
+
+            &-active{
+                transform: translateX(100%);
+                opacity: 0;
+                transition: all 300ms;
+            }
+        }
+    }
+
+    .modal{
+
+        &-enter{
+            transform: translateY(160px);
+            opacity: 0;
+
+            &-active{
+                transform: translateY(0px);
+                opacity: 1;
+                transition: all 200ms;
+            }
+        }
+
+        &-exit{
+            transform: translateY(0px);
+            opacity: 1;
+
+            &-active{
+                transform: translateY(160px);
+                opacity: 0;
+                transition: all 200ms;
+            }
+        }
+    }
 `

@@ -39,8 +39,8 @@ export const SkillList = styled.ul`
 
         &:hover{
             transform: scale(1.05);
-            background-image: linear-gradient(90deg,var(--bg-border),var(--bg-shadow));
-            border-color: (--txt-primary);
+            background-image: linear-gradient(90deg,#f61b10,#ef0963);
+            border-color: var(--txt-primary);
         }
 
         svg{

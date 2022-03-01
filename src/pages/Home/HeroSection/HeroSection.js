@@ -40,6 +40,7 @@ export const HeroContainer = styled.section`
   justify-content: center;
   align-items: center;
   background-color: var(--bg);
+  z-index: -1;
 
   @media ${device.laptop}{
     padding: 150px 90px;
@@ -48,11 +49,11 @@ export const HeroContainer = styled.section`
 `
 
 export const HeroTitle = styled.h1`
-  font-size: 1.75rem;
+  font-size: 36px;
   font-weight: 900;
   font-family: Montserrat,sans-serif;
   line-height: 48px;
-  color: var(--txt);
+  color: var(--txt-title);
 
   strong{
     font-weight: 900;
@@ -69,7 +70,7 @@ export const HeroTitle = styled.h1`
   }
 
   @media ${device.laptop}{
-    font-size: 3.5rem;
+    font-size: 56px;
     line-height: 90px;
   }
 

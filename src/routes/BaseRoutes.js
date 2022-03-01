@@ -1,10 +1,13 @@
 import { lazy } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
+//modal
+import ProjectCardModal from '../pages/Projects/ProjectCardModal';
 
 // page
 const Home = lazy(()=> import('../pages/Home'));
 const About = lazy(()=> import('../pages/About'));
 const Resume = lazy(()=> import('../pages/Resume'));
+const Project = lazy(()=> import('../pages/Projects'));
 
 //routes
 export const routes = {
@@ -17,14 +20,23 @@ export const routes = {
 };
 
 const BaseRoutes = () => {
+
     const location = useLocation();
     const background = location.state?.background;
+    
     return (
-        <Switch location={background || location}>
-          <Route path={routes.HOME} exact component={Home} />
-          <Route path={routes.ABOUT} component={About} />
-          <Route path={routes.RESUME} component={Resume} />
-        </Switch>
+        <>
+            <Switch location={background || location}>
+            <Route path={routes.HOME} exact component={Home} />
+            <Route path={routes.ABOUT} component={About} />
+            <Route path={routes.PROJECTS} component={Project} />
+            <Route path={routes.PROJECT} component={ProjectCardModal} />
+            <Route path={routes.RESUME} component={Resume} />
+            </Switch>
+            {background && (
+                <Route path={routes.PROJECT} component={ProjectCardModal} />
+            )}
+        </>
     )
 }
 

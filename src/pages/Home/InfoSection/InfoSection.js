@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import about from '../../../assets/images/about.jpg';
+
 import { device } from "../../../styles/breakpoints";
 
 export const InfoContainer = styled.section`
@@ -28,9 +28,10 @@ export const InfoInner = styled.div`
 export const InfoDescription = styled.div`
     width: 100%;
     padding-top: 30px;
+    
 
     @media ${device.laptop}{
-        width: 55%;
+        width: 75%;
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 0px;
@@ -72,25 +73,18 @@ export const InfoTabContent = styled.div`
 
 `
 export const InfoThumbnail = styled.div`
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex: 0 1 auto;
     align-items: center;
     justify-content: center;
+    padding: 0 35px;
 
     @media ${device.laptop}{
-        width: 43%;
-        padding-left: 30px;
-
+        width: 35%;
     }
-`
-export const InfoImage = styled.img.attrs({
-    src: `${about}`
-  })`
-  max-width: 100%;
-  height: auto;
-`;  
+` 
 
 export const InfoText = styled.p`
   color: var(--txt);

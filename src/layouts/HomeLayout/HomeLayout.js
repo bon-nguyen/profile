@@ -1,26 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import Sidebar from '../../components/Sidebar';
+import MainNavigation from '../../components/Navigation/MainNavigation';
 import Particles from '../../components/UIElements/Particles/Particles';
 
 const HomeLayout = ({children}) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen((prev) => !prev);
-    };
 
     return (
         <>
-            <Header isOpen={isOpen} toggle={toggle} >
-                <Sidebar isOpen={isOpen} toggle={toggle} />
-            </Header>
-            
             <Particles />
+            <Header>
+                <MainNavigation/>
+            </Header> 
             <main>{children}</main>
             <Footer/>
-            
         </>
     );
 };

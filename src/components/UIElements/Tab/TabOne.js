@@ -16,14 +16,15 @@ export const TabOneContent = styled.div`
         list-style: none;
 
         li{
-            color: #7e7e7e;
+            color: var(--txt);
             font-size: 16px;
             margin-bottom: 15px;
 
-            a{
-                font-weight: 500;
+            p{
+                font-weight: 600;
                 display: block;
                 color: #717173;
+
                 span{
                     font-weight: 300;
                 }
@@ -57,11 +58,10 @@ export const TabOneWrap = styled.div`
                 position: absolute;
                 content: "";
                 width: 30px;
-                background: rgba(0,0,0,.2);
-                -webkit-transition: all .7s cubic-bezier(.19,1,.22,1) 0s;
-                transition: all .7s cubic-bezier(.19,1,.22,1) 0s;
+                background: rgba(198,201,216,.75);
                 height: 2px;
                 bottom: 0;
+                transition: all .7s cubic-bezier(.19,1,.22,1) 0s;
             }
 
             &.react-tabs__tab--selected{

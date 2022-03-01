@@ -5,6 +5,7 @@ import { ResumeContainer, ResumeInner, ResumeStory, ResumeSvg, ResumeWrap } from
 import { Title } from '../../../components/UIElements/TitlePrimary/TitlePrimary';
 import Button from '../../../components/UIElements/Button';
 
+
 const resumeLink = 'https://raw.githubusercontent.com/bon-nguyen/resume/main/NguyenTranBon-CV.pdf';
 
 const ResumeSection = () => {

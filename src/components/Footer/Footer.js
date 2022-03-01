@@ -15,46 +15,20 @@ export const FooterContainer = styled.footer`
 export const FooterCoppy = styled.div`
     color: var(--txt);
     font-size: 16px;
-    opacity: .75;
-    width: 100%;
-    text-align: center;
+
 
     @media ${device.tablet}{
-        font-size : 14px;
-        order: 2;
+
     }
 
     @media ${device.laptop}{
-        flex: 0.33;
-        text-align: right;
+        flex-shrink: 1;
+        flex-basis: 33.3333%;
     }
-
 
 `
 
-export const FooterLogo = styled(Link)`
-    font-size: 2.5em;
-    font-weight: 700;
-    color: var(--txt);
-    width: 100%;
-    margin-bottom: 1rem;
-    text-align: center;
 
-    span:first-child{
-        color: var(--logo-primary);
-    }
-
-    @media ${device.tablet}{
-        order: 1;
-        flex: 0.5;
-        text-align: left;
-    }
-
-    @media ${device.laptop}{
-        flex: 0.333;
-        margin-bottom: 0;
-    }
-`
 
 export const FooterInner = styled.div`
     max-width: 1200px;
@@ -63,17 +37,21 @@ export const FooterInner = styled.div`
 
 export const FooterTop = styled.div`
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 
     @media ${device.tablet}{
-        flex-flow: row wrap;
+    
     }
 
     @media ${device.laptop}{
-        
+        flex-direction: row;
+
+        > a{
+            flex-shrink: 1;
+            flex-basis: 33.3333%;
+        }
     }
     
 `
@@ -116,23 +94,28 @@ export const FooterItem = styled.li`
         align-items: center;
         justify-content: center;
         color: var(--txt);
-        border: 2px solid var(--bg-border);
+        border: 2px solid var(--btn-border);
         border-radius: 50%;
         text-align: center;
         transition: all .3s cubic-bezier(.645,.045,.355,1);
+
+        svg{
+            fill: var(--btn-icon);
+        }
     }
 
 `
 
 export const FooterSocial = styled.div`
-    width: 100%;
+    position: relative;
+
 
     @media ${device.tablet}{
-        order: 2;
-        flex: 0.5;
+
     }
 
     @media ${device.laptop}{
-        flex: 0.333;
+        flex-shrink: 1;
+        flex-basis: 33.3333%;
     }
 `

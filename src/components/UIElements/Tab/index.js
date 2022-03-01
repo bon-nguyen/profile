@@ -20,34 +20,23 @@ const TabOne = () => {
                     <TabOneContent>
                         <ul>
                             <li>
-                                User experience design <span> - UI/UX</span>
+                                <p>User experience design <span> - UI/UX</span></p>
                                 Delight the user and make it work.
-                            </li>
-                            <li>
-                                Web and user interface design<span> - Development</span>
-                                Websites, web experiences, ...
-                            </li>
-                            <li>
-                                Interaction design <span> - Animation</span>
-                                I like to move it move it.
-                            </li>
-                        </ul>
-                    </TabOneContent>
-                </TabPanel>
-
-                <TabPanel>
-                    <TabOneContent>
-                        <ul>
-                            <li>
-                                <p>Delight the user and make it work.</p>
                             </li>
                             <li>
                                 <p>Web and user interface design<span> - Development</span></p>
                                 Websites, web experiences, ...
                             </li>
+                        </ul>
+                    </TabOneContent>
+                </TabPanel>
+
+                <TabPanel>
+                    <TabOneContent>
+                        <ul>
                             <li>
-                                <p>Interaction design <span> - Animation</span></p>
-                                I like to move it move it.
+                                <p>Wordpress Development <span> - Hazo Media</span></p>
+                                Mar - Oct 2021
                             </li>
                         </ul>
                     </TabOneContent>
@@ -57,8 +46,8 @@ const TabOne = () => {
                     <TabOneContent>
                         <ul>
                             <li>
-                                <p>>User experience design <span> - UI/UX</span></p>
-                                Delight the user and make it work.
+                                <p>Thu Duc Technolofy College <span> - Information Technolofy</span></p>
+                                2018 - 2021
                             </li>
                         </ul>
                     </TabOneContent>

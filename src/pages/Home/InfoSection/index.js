@@ -1,9 +1,10 @@
 import React from 'react';
 import { Title } from '../../../components/UIElements/TitlePrimary/TitlePrimary';
 
-import { InfoContainer, InfoDescription, InfoInner, InfoTab, InfoTabContent, InfoTabTitle, InfoThumbnail, InfoImage, InfoText } from './InfoSection';
+import { InfoContainer, InfoDescription, InfoInner,  InfoThumbnail, InfoText } from './InfoSection';
 import TabOne from '../../../components/UIElements/Tab';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import avatar from '../../../assets/svg/profile.svg';
 
 
 const InfoSection = () => {
@@ -11,7 +12,7 @@ const InfoSection = () => {
         <InfoContainer>
             <InfoInner>
                 <InfoThumbnail>
-                    <InfoImage/>
+                    <LazyLoadImage width="100%" height="auto" alt="avatar" effect="blur" src={avatar} />
                 </InfoThumbnail>
                 <InfoDescription>
                     <Title>About me</Title>
