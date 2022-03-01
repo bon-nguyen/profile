@@ -1,6 +1,6 @@
 {
-  "homepage": "https://tranbonresume.github.io/react-profiler",
-  "name": "react-profiler",
+  "homepage": "https://tranbonresume.github.io/profile",
+  "name": "profile",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,7 +25,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
