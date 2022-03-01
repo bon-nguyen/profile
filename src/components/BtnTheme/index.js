@@ -4,6 +4,7 @@ import { BtnThemeContainer } from './BtnTheme';
 import { useThemeContext } from '../../hooks/themeHook/themeHook';
 const BtnTheme = () => {
     const { dark, toggleTheme } = useThemeContext();
+    console.log("dd");
     return (
         <BtnThemeContainer onClick={toggleTheme}>
             {dark && <MdOutlineWbSunny size={22}/>}
