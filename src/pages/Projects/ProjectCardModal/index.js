@@ -9,7 +9,7 @@ import { ProjectCardModalFooter, ProjectCardModalContainer, ProjectCardModalCont
 
 const ProjectCardModal = () => {
     const { id } = useParams();
-    const { image, title, technologies } = PROJECTS.find(
+    const { image, title, links, technologies } = PROJECTS.find(
         (p) => id === p.id,
     );
     const { isVisible, toggleModal } = useModal();
@@ -39,8 +39,8 @@ const ProjectCardModal = () => {
                         ))}
                     </ProjectCardModalTechList>
                     <ProjectCardModalFooter>
-                        <Button>123</Button>
-                        <Button primary>456</Button>
+                        <Button href={links.site}>View project</Button>
+                        <Button primary href={links.repo}>source code</Button>
                     </ProjectCardModalFooter>
                 </ProjectCardModalContent>
             </ProjectCardModalContainer>

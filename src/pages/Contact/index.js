@@ -1,14 +1,14 @@
 import React from 'react';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
-import ProjectSection from './ProjectSection';
+import ContactSection from './ContactSection';
 
-const Projects = () => {
+const Contact = () => {
     return (
         <BaseLayout>
-            <ProjectSection />
+            <ContactSection />
         </BaseLayout>
     );
 };
 
-export default Projects;
+export default Contact;
 

@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
         --preloader: #fafafa;
         --logo-primary: #f9004d;
         --border-bottom: #333;
+        --border: #ebebeb;
         --btn-primary: #f9004d;
         --btn-border: #1f1f25;
         --btn-icon: #1f1f25;
@@ -47,6 +48,7 @@ export const GlobalStyle = createGlobalStyle`
         --preloader: #0c0513;
         --logo-primary: #f9004d;
         --border-bottom: #333;
+        --border: #ebebeb;
         --btn-primary: #f9004d;
         --btn-border: #f9004d;
         --btn-icon: rgba(198,201,216,.75);
@@ -122,10 +124,10 @@ export const GlobalStyle = createGlobalStyle`
             &-active{
                 transform: translateY(0px);
                 opacity: 1;
-                transition: all 200ms;
+                transition: all 300ms;
             }
         }
-
+        
         &-exit{
             transform: translateY(0px);
             opacity: 1;
@@ -133,7 +135,7 @@ export const GlobalStyle = createGlobalStyle`
             &-active{
                 transform: translateY(160px);
                 opacity: 0;
-                transition: all 200ms;
+                transition: all 300ms;
             }
         }
     }

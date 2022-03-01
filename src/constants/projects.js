@@ -11,7 +11,7 @@ export const PROJECTS = [
     },
     links: {
       site: 'https://apiko-marketplace-app-snaichuk.herokuapp.com/',
-      repo: 'https://github.com/vsnaichuk/apiko-marketplace-app-snaichuk',
+      repo: 'https://github.com/bon-nguyen/react-profiler',
     },
     technologies: [
       'react',
